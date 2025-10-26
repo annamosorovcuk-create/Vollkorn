@@ -13,8 +13,38 @@ body{
 #alien_interface_1{
     height: 2449px;
     width: 1666px;
-    background-image: url('../assets/alien_bg_1.png')
+    background-image: url('../assets/alien_bg_1.png');
+    
 }
+.image-under-box{
+    position: absolute;
+    background-image: url('../assets/alien_bg_1.1.png');
+    left: 1000px;
+    top: 950px;
+    width: 571px;
+    height: 431px;
+    z-index: 3;
+}
+
+.image-under-box_2{
+    position: absolute;
+    background-image: url('../assets/alien_bg_6png.png');
+    left: 470px;
+    top: 640px;
+    width: 323px;
+    height: 863px;
+}
+
+.image_under-box_3{
+    position: absolute;
+    background-image: url('../assets/alien_bg_1.2.png');
+    left: 380px;
+    top: 1380px;
+    height: 500px;
+    width: 982px;
+    z-index: 3;
+}
+
 h1 {
     font-size: 96px;
     color: #DBE2C3;
@@ -22,6 +52,55 @@ h1 {
     top: 290px;
     left: 631px;
 }
+h2{
+    font-size: 50px;
+    color: #DBE2C3;
+    position: absolute;
+    top: 470px;
+    left: 649px;
+    z-index: 100;
+    font-weight: normal;
+}
+.h2-font{
+    font-size: 50px;
+    color: #DBE2C3;
+    position: absolute;
+    top: 1664px;
+    left: 308px;
+    z-index: 100;
+    font-weight: normal;
+}            
+
+.h2-headset{
+    font-size: 50px;
+    color: #DBE2C3;
+    position: absolute;
+    top: 2814px;
+    left: 308px;
+    z-index: 100;
+    font-weight: normal;
+}
+
+.h2-glyphs{
+    font-size: 50px;
+    color: #DBE2C3;
+    position: absolute;
+    top: 3885px;
+    left: 348px;
+    z-index: 1001;
+    font-weight: normal;
+}
+
+.h2-tracing{
+    font-size: 50px;
+    color: #DBE2C3;
+    position: absolute;
+    top: 5088px;
+    left: 293px;
+    z-index: 1001;
+    font-weight: normal;
+}
+
 a{
     font-size: 45px;
     text-decoration: none;
@@ -47,6 +126,7 @@ a{
     left: 192px;
     top: 308px;
 }
+
 .goth-title{
     position: absolute;
     left: 465px;
@@ -56,6 +136,7 @@ a{
     font-size: 280px;
     font-weight: bold;
     color: #961414;
+    z-index: 1001;
     
 }
 .rectangle {
@@ -79,6 +160,7 @@ a{
     height: 741px;
     background: linear-gradient(to bottom, #90BBC9 0%, #557681 5%);
     border: 3px solid white;
+    
 }
 .box_1{
     position:absolute;
@@ -86,7 +168,8 @@ a{
     top: 690px;
     width: 800px;
     height: 53px;
-    background-color:#000000 
+    background-color:#000000;
+    
 }
 
 .box_2{
@@ -95,9 +178,11 @@ a{
     top: 765px;
     width: 800px;
     height: 624px;
-     background: linear-gradient(to bottom, #90BBC9 0%, #557681 5%);
+    background: linear-gradient(to bottom, #90BBC9 0%, #557681 5%);
     border: 3px solid rgb(0, 0, 0);
     padding: 20px;
+    
+    
 
     color: #000000;
     font-size: 30px;
@@ -105,6 +190,7 @@ a{
     text-align: left;
     padding: 20px 30px;
     margin: 0;
+    
 }
 .blocks-container{
   position: absolute; 
@@ -128,24 +214,136 @@ a{
     color: #961414;
     font-size: 30px;
 }
-#section_3{
-    position: relative;
-    padding: 3888px 176px 0 258px;
+
+
+#section_2{
+    padding: 281px 127px 0 127px;
 }
+
+.rectangle_2 {
+    position:absolute;
+    left: 257px;
+    top: 2811px;
+    width: 326px;
+    height: 67px;
+    background: 
+     linear-gradient(to right,  #90BBC9, transparent 5%),
+     linear-gradient(to bottom, #90BBC9, transparent 20%),
+     linear-gradient(to left, #1C2C31, transparent 5%),
+     #557681;
+     border: 3px solid white;
+
+}
+
+.alphapet-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background: 
+       
+        #000000;
+    padding: 0px;
+    border: 3px solid white;
+    width: fit-content;  /* значение, которое заставляет элемент подстраивать свою ширину под содержимое. */
+}  
+.table-cell:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: 
+        linear-gradient(to right,  #666666, transparent 13%),
+        linear-gradient(to bottom, #666666, transparent 13%);
+    pointer-events: none;
+    z-index: 1;
+
+}
+.table-row {
+    display: flex;
+    gap: 0px;
+    position: relative;
+    z-index: 2;
+}
+.table-cell {
+    width: 149px;
+    height: 156px;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: #DBE2C3;
+    transition: all 0.3s ease;
+    background: #000000;
+    position: relative;
+    overflow: hidden; /* Обрезает */
+    text-align: center;
+    z-index: 1;
+}
+.table-cell:hover::before{
+    background: 
+        linear-gradient(to right, white, transparent 13%),
+        linear-gradient(to right, white, transparent 13%),
+}
+
+.table-cell:hover {
+    background-color: #DBE2C3 !important;
+    color: #961414 !important;
+    font-size: 84px;
+    transform: scale(1.05);
+    z-index: 2;
+
+}
+.cubes-container{
+    display: flex;
+    gap: 0;
+}
+.cube{
+     width: 149px;
+    height: 156px;
+    background-color: #000000;
+    border: 3px solid white;
+    position: relative;
+}
+.cube::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: 
+        linear-gradient(to right,  #666666, transparent 13%),
+        linear-gradient(to bottom, #666666, transparent 13%);
+    pointer-events: none;
+    z-index: 1;
+
+}
+
+#section_3 {
+    position: relative;
+    padding: 334px 176px 0 258px;
+}
+
 #alien_interface_2{
     height: 1421px;
     width: 1486px;
     background-image: url('../assets/alien_bg_2.png');
+    position: relative;
 } 
 
 .blocks-container_2{
   position: absolute; 
   left: 1500px;
-  top: 4002px;
+  top: 473px;
   display: flex;
   gap: 12px;
+  z-index: 100;
+  
 }
-.block{
+.block_2{
     width: 47px;
     height: 44px;
     background: linear-gradient(to bottom, #90BBC9 0%, #557681 5%);
@@ -155,15 +353,19 @@ a{
     color: #000000;
     font-size: 60px;
     font-weight: bold;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    
 }
-.block:last-child{
+.block_2:last-child{
     color: #961414;
     font-size: 30px;
+    border: 1px solid #000000;
 }
 .box_3{
     position:absolute;
     left: 306px;
-    top: 4130px;
+    top: 576px;
     width: 1338px;
     height: 781px;
     background: linear-gradient(to bottom, #666666 0%, #000000 5%);
@@ -206,22 +408,104 @@ a{
     transform: translateY(-35px);
 }
 
+.rectangle_3 {
+    position:absolute;
+    left: 257px;
+    top: 334px;
+    width: 326px;
+    height: 67px;
+    background: 
+     linear-gradient(to right,  #90BBC9, transparent 5%),
+     linear-gradient(to bottom, #90BBC9, transparent 20%),
+     linear-gradient(to left, #1C2C31, transparent 5%),
+     #557681;
+     border: 3px solid white;
+     z-index: 1000;
+}
+
+
+
 #section_4{
     position: relative;
     padding: 0 228px 0 174px;
     margin-top: -5%;
+
 }
 #alien_interface_3{
-    height: 1421px;
+    height: 979px;
     width: 1518px;
     background-image: url('../assets/alien_bg_3.png');
     background-repeat: no-repeat;
+    position: relative;
+    
 }
+
+.animated-text {
+    font-family: 'Vollkorn';
+    font-size: 150px;
+    font-weight: 400; /*Насыщенность*/
+    font-variation-settings: 'wght' 400;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); /*Плавность*/
+    color: #DBE2C3;
+    display: inline-block;
+
+    position: absolute;
+    left: 456px;
+    top: 269px;
+    z-index: 10;
+}
+.animated-text:hover {
+    font-weight: 900;
+    font-variation-settings: 'wght' 900;
+    transform: skewX(-2deg) scale(1.02); /*Наклон и увеличение текста*/
+    color: #DBE2C3;
+}
+.animated-text_1 {
+    font-family: 'Vollkorn';
+    font-size: 150px;
+    font-weight: 400; /*Насыщенность*/
+    font-style: italic;
+    font-variation-settings: 'wght' 400;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); /*Плавность*/
+    color: #DBE2C3;
+    display: inline-block;
+
+    position: absolute;
+    left: 456px;
+    top: 455px;
+    z-index: 10;
+}
+.animated-text_1:hover {
+    font-weight: 900;
+    font-style: italic;
+    font-variation-settings: 'wght' 900;
+    transform: skewX(-2deg) scale(1.02); /*Наклон и увеличение текста*/
+    color: #DBE2C3;
+}
+
+.rectangle_4 {
+    position:absolute;
+    left: 257px;
+    top: 5085px;
+    width: 326px;
+    height: 67px;
+    background: 
+     linear-gradient(to right,  #90BBC9, transparent 5%),
+     linear-gradient(to bottom, #90BBC9, transparent 20%),
+     linear-gradient(to left, #1C2C31, transparent 5%),
+     #557681;
+     border: 3px solid white;
+     z-index: 1000;
+}
+
 #section_5{
-     padding: 0px 70px 0 320px;
+     padding: 0px 79px 0 360px;
+     
+     
 }
 #alien_interface_5{
-    height: 1232px;
+    height: 1112px;
     width: 1530px;
     background-image: url('../assets/alien_bg_5.png');
+    
 }
